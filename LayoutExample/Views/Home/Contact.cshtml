@@ -1,7 +1,35 @@
-﻿
+﻿@model LayoutExample.Models.Contact
+
 @{
     ViewBag.Title = "Contact";
 }
 
 <h2>Contact</h2>
+<p>
+    @Model.Text
+</p>
+
+<style>
+    td {
+        border: 1px solid black;
+    }
+</style>
+<table style="border:1px solid black;">
+    <tr>
+        <td>Address</td>
+        <td>@Model.Address</td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td>@Model.Email</td>
+    </tr>
+    <tr>
+        <td>Phone Number</td>
+        <td>@Model.PhoneNumber</td>
+    </tr>
+    <tr>
+        <td>Find me here:</td>
+        <td><img src="~/Content/Images/Layout/@Model.ImageMap" /></td>
+    </tr>
+</table>
 

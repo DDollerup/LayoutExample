@@ -1,0 +1,36 @@
+﻿@model List<LayoutExample.Models.GalleryItem>
+@{
+    ViewBag.Title = "Gallery";
+}
+
+<h2>Gallery</h2>
+
+<style>
+    #galleryHolder {
+        width: 960px;
+    }
+
+    table {
+        float: left;
+        width: 300px;
+    }
+</style>
+
+<div id="galleryHolder">
+    @foreach (LayoutExample.Models.GalleryItem galleryItem in Model)
+    {
+        <table>
+            <tr>
+                <td>
+                    @galleryItem.Title
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="~/Content/Images/Gallery/@galleryItem.Image" alt="@galleryItem.AltText" />
+                </td>
+            </tr>
+        </table>
+    }
+</div>
+

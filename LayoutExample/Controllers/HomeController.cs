@@ -12,6 +12,7 @@ namespace LayoutExample.Controllers
     {
         HomeFac homeFac = new HomeFac();
         ContactFac contactFac = new ContactFac();
+        GalleryFac galleryFac = new GalleryFac();
 
         // GET: Home
         public ActionResult Index()
@@ -24,6 +25,12 @@ namespace LayoutExample.Controllers
         {
             Contact contact = contactFac.GetContact();
             return View(contact);
+        }
+
+        public ActionResult Gallery()
+        {
+            List<GalleryItem> gallery = galleryFac.GetGalleryItems();
+            return View(gallery);
         }
     }
 }

@@ -89,6 +89,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\Gallery\Map.jpg" />
+    <Content Include="Content\Images\Gallery\Obama.jpg" />
+    <Content Include="Content\Images\Gallery\WhiteHouse.jpg" />
     <Content Include="Content\Images\Layout\Map.jpg" />
     <Content Include="Content\Images\Layout\Obama.jpg" />
     <Content Include="Content\Images\Layout\WhiteHouse.jpg" />
@@ -103,7 +106,9 @@
     </Compile>
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\Factories\ContactFac.cs" />
+    <Compile Include="Models\Factories\GalleryFac.cs" />
     <Compile Include="Models\Factories\HomeFac.cs" />
+    <Compile Include="Models\GalleryItem.cs" />
     <Compile Include="Models\Home.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -114,6 +119,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Gallery.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

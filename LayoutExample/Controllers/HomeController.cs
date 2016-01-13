@@ -14,7 +14,6 @@ namespace LayoutExample.Controllers
         ContactFac contactFac = new ContactFac();
         GalleryFac galleryFac = new GalleryFac();
 
-        // GET: Home
         public ActionResult Index()
         {
             Home home = homeFac.GetHome();
